@@ -2,6 +2,7 @@ import configparser
 import tkinter
 
 from visual_elements.BaseSounds import BaseSounds
+from visual_elements.SelectScale import SelectScaleOptionMenu
 from visual_elements.SoundBoard import SoundBoard
 
 
@@ -14,6 +15,7 @@ class BaseFrame(tkinter.Frame):
 
         SoundBoard(self, config_parser).pack(padx=0, pady=0)
         BaseSounds(self, config_parser).pack(padx=0, pady=0)
+        SelectScaleOptionMenu(self).pack()
 
     @staticmethod
     def get_config_parser():

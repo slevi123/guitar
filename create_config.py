@@ -1,6 +1,10 @@
 import configparser
 
 config = configparser.ConfigParser()
+config["SOUNDNAMES"] = {
+
+}
+
 config['SOUNDCOLOR'] = {
     'C': 0,
     'C#': 30,
@@ -18,7 +22,7 @@ config['SOUNDCOLOR'] = {
 
 config['SOUNDBOARD'] = {
     'marked_steps': '3, 5, 7, 9, 12, 15, 17',
-    'guitar_tuning': 'e/2,a/2,d/3,g/3,b/3,e/4',
+    'guitar_tuning': 'e/4,b/3,g/3,d/3,a/2,e/2',
 }
 
 with open('config.ini', 'w') as configfile:
